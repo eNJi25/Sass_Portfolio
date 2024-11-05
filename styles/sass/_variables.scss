@@ -1,6 +1,15 @@
-$primary : #55198b;
+$primary: #55198b;
 $secondary: #aaa5ff;
-$gray : #868e96;
+$gray: #868e96;
 $lightgray: #f3efef;
 $dark: #171c28;
 $white: #ffffff;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "gray": $gray,
+  "lightgray": $lightgray,
+  "dark": $dark,
+  "white": $white,
+);
