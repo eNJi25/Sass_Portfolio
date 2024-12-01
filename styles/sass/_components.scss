@@ -1,7 +1,7 @@
 .section-display {
   display: flex;
-  margin-bottom: 2rem;
   flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: 768px) {
     &.right-text-content {
@@ -22,6 +22,7 @@
   .text-content {
     flex: 1;
     .title {
+      margin: 10px;
       font-size: 30px;
       @media screen and (min-width: 768px) {
         font-size: 70px;
@@ -40,7 +41,7 @@
 
   .illustration {
     flex: 1;
-    margin-top: 50px;
+    margin-top: 20px;
     img {
       max-width: 100%;
       display: block;

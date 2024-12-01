@@ -13,10 +13,32 @@
 
 <body>
     <header class="header-website">
-        HEADER
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-text">Nicolas Fischer</span>
+            </div>
+            <div class="menu">
+                <input type="checkbox" id="menu-toggle" class="menu-input">
+                <label for="menu-toggle" class="menu-input-label"><i class="fa-solid fa-bars"></i></label>
+                <div class="dropdown-menu">
+                    <ul class="nav-links">
+                        <li class="nav-link">
+                            <a href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#aPropos">A propos</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#competences">Compétences</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
     </header>
     <main>
-        <section class="section-display left-text-content">
+        <section class="section-display left-text-content" id="aPropos">
             <article class="text-content">
                 <h1 class="title">N. Fischer</h1>
                 <p class="paragraph">Un développeur logiciel Full Stack passionné <span class="animate-fusee">
@@ -38,7 +60,7 @@
                 <img src="images/presentation.png" alt="présentation sur un ordinateur de N. Fischer">
             </div>
         </section>
-        <section class="section-display right-text-content">
+        <section class="section-display right-text-content" id="competences">
             <article class="text-content">
                 <h2 class="title">Mes compétences</h2>
                 <p class="paragraph">Voici les différents languages que je maitrise :</p>
