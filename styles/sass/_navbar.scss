@@ -3,10 +3,9 @@
   top: 0;
   left: 0;
   background-color: $dark;
+  padding: 10px;
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include justify-between;
     padding-top: 10px;
     padding-bottom: 10px;
     .menu {
