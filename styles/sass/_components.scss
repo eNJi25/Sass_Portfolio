@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     &.right-text-content {
@@ -22,7 +23,6 @@
   .text-content {
     flex: 1;
     .title {
-      margin: 10px;
       font-size: 30px;
       @media screen and (min-width: 768px) {
         font-size: 70px;
@@ -30,6 +30,11 @@
       line-height: 1.1;
       font-weight: 700;
     }
+
+    .title.title-projet {
+      text-align: center;
+    }
+
     .paragraph {
       font-size: 15px;
       @media screen and (min-width: 768px) {
@@ -95,6 +100,55 @@
     }
     100% {
       transform: rotate(360deg);
+    }
+  }
+}
+
+.list-blog {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  margin-top: 30px;
+
+  a {
+    @include link-as-text;
+  }
+
+  .blog {
+    box-shadow: 1px 0 20px #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    position: relative;
+
+    h4,
+    p {
+      position: relative;
+      z-index: 6;
+      background-color: transparent;
+    }
+
+    &:hover {
+      cursor: pointer;
+      .link-blog {
+        width: calc(100% - 25px);
+        height: calc(100% - 25px);
+        border-radius: 5px;
+      }
+    }
+
+    .link-blog {
+      width: 15px;
+      height: 20px;
+      display: block;
+      background-color: $primary;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px 10px 15px 15px;
+      border-bottom-left-radius: 100%;
+      transition: all ease-out 0.45s;
+      text-align: right;
+      z-index: 5;
     }
   }
 }

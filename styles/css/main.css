@@ -22,7 +22,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   main {
-    margin: 0 30px;
+    margin: 0 20px;
   }
 }
 
@@ -35,6 +35,7 @@ picture.emoji-gif img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .section-display.right-text-content {
@@ -54,7 +55,6 @@ picture.emoji-gif img {
   flex: 1;
 }
 .section-display .text-content .title {
-  margin: 10px;
   font-size: 30px;
   line-height: 1.1;
   font-weight: 700;
@@ -63,6 +63,9 @@ picture.emoji-gif img {
   .section-display .text-content .title {
     font-size: 70px;
   }
+}
+.section-display .text-content .title.title-projet {
+  text-align: center;
 }
 .section-display .text-content .paragraph {
   font-size: 15px;
@@ -132,6 +135,51 @@ picture.emoji-gif img {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.list-blog {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  margin-top: 30px;
+}
+.list-blog a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.list-blog .blog {
+  box-shadow: 1px 0 20px #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  position: relative;
+}
+.list-blog .blog h4,
+.list-blog .blog p {
+  position: relative;
+  z-index: 6;
+  background-color: transparent;
+}
+.list-blog .blog:hover {
+  cursor: pointer;
+}
+.list-blog .blog:hover .link-blog {
+  width: calc(100% - 25px);
+  height: calc(100% - 25px);
+  border-radius: 5px;
+}
+.list-blog .blog .link-blog {
+  width: 15px;
+  height: 20px;
+  display: block;
+  background-color: #55198b;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 10px 15px 15px;
+  border-bottom-left-radius: 100%;
+  transition: all ease-out 0.45s;
+  text-align: right;
+  z-index: 5;
 }
 
 .btn {
