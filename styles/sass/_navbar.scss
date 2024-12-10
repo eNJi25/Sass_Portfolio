@@ -8,6 +8,17 @@
     @include justify-between;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      img {
+        width: 180px;
+        height: 100%;
+        margin-right: 10px;
+      }
+    }
+
     .menu {
       .menu-input {
         display: none;

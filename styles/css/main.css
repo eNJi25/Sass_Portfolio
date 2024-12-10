@@ -346,6 +346,15 @@ picture.emoji-gif img {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.header-website .navbar .logo {
+  display: flex;
+  align-items: center;
+}
+.header-website .navbar .logo img {
+  width: 180px;
+  height: 100%;
+  margin-right: 10px;
+}
 .header-website .navbar .menu .menu-input {
   display: none;
 }
