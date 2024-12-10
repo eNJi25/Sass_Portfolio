@@ -31,6 +31,18 @@ picture.emoji-gif img {
   width: 1em;
 }
 
+#goToTop {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: block;
+  background-color: #55198b;
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+}
+
 .section-display {
   display: flex;
   flex-direction: column;
@@ -381,4 +393,14 @@ picture.emoji-gif img {
     justify-content: space-between;
     padding: 0;
   }
+}
+
+footer {
+  padding: 20px;
+}
+footer .credits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

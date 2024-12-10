@@ -24,3 +24,15 @@ picture.emoji-gif {
     width: 1em;
   }
 }
+
+#goToTop {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: block;
+  background-color: $primary;
+  border-radius: 5px;
+  color: $white;
+  text-decoration: none;
+  padding: 10px;
+}

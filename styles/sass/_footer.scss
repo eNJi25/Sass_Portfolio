@@ -1,0 +1,9 @@
+footer {
+  padding: 20px;
+  .credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
