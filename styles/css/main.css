@@ -235,8 +235,8 @@ picture.emoji-gif img {
   transition: all 0.8s ease;
 }
 .diplome .diplome-logo {
-  max-width: 200px;
-  max-height: fit-content;
+  width: 200px;
+  height: 200px;
   border-radius: 8px;
 }
 .diplome .diplome-content .diplome-title {
@@ -263,6 +263,7 @@ picture.emoji-gif img {
 
 .experience {
   margin-bottom: 15px;
+  transition: all ease 1s;
 }
 @media screen and (min-width: 1024px) {
   .experience {
@@ -270,6 +271,9 @@ picture.emoji-gif img {
     padding: 15px;
     box-sizing: border-box;
   }
+}
+.experience:hover {
+  transform: scale(1.1);
 }
 .experience .experience-header {
   position: relative;
@@ -279,6 +283,7 @@ picture.emoji-gif img {
   border-radius: 8px 8px 0 0;
   border: 1px solid #ffffff;
   border-bottom: none;
+  box-shadow: 1px 0 20px #fff;
 }
 .experience .experience-header .experience-title {
   text-align: center;
@@ -299,6 +304,7 @@ picture.emoji-gif img {
   padding: 15px;
   padding-top: 65px;
   border-radius: 0 0 8px 8px;
+  box-shadow: 1px 0 20px #fff;
 }
 .experience .experience-content .experience-subtitle {
   font-weight: bold;
