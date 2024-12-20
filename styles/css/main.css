@@ -37,7 +37,7 @@ picture.emoji-gif img {
   right: 15px;
   display: block;
   background-color: #55198b;
-  border-radius: 5px;
+  border-radius: 8px;
   color: #ffffff;
   text-decoration: none;
   padding: 10px;
@@ -46,7 +46,6 @@ picture.emoji-gif img {
 .section-display {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -75,9 +74,6 @@ picture.emoji-gif img {
   .section-display .text-content .title {
     font-size: 70px;
   }
-}
-.section-display .text-content .title.title-projet {
-  text-align: center;
 }
 .section-display .text-content .paragraph {
   font-size: 15px;
@@ -152,7 +148,7 @@ picture.emoji-gif img {
 .list-blog {
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   margin-top: 30px;
 }
 .list-blog a {
@@ -162,7 +158,7 @@ picture.emoji-gif img {
 .list-blog .blog {
   box-shadow: 1px 0 20px #fff;
   padding: 15px 30px;
-  border-radius: 5px;
+  border-radius: 8px;
   position: relative;
 }
 .list-blog .blog h4,
@@ -177,7 +173,7 @@ picture.emoji-gif img {
 .list-blog .blog:hover .link-blog {
   width: calc(100% - 25px);
   height: calc(100% - 25px);
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .list-blog .blog .link-blog {
   width: 15px;
@@ -188,6 +184,7 @@ picture.emoji-gif img {
   top: 0;
   right: 0;
   padding: 10px 10px 15px 15px;
+  border-top-right-radius: 8px;
   border-bottom-left-radius: 100%;
   transition: all ease-out 0.45s;
   text-align: right;
@@ -212,9 +209,54 @@ picture.emoji-gif img {
   border-radius: 8px;
 }
 
+.diplome {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  padding-bottom: 45px;
+  margin: 20px 0;
+}
+@media screen and (min-width: 768px) {
+  .diplome {
+    flex-direction: row;
+  }
+}
+.diplome:hover::after {
+  width: 100%;
+}
+.diplome::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  background-color: #868e96;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.8s ease;
+}
+.diplome .diplome-logo {
+  max-width: 200px;
+  max-height: fit-content;
+  border-radius: 8px;
+}
+.diplome .diplome-content .diplome-title {
+  margin: 0 0 10px 0;
+}
+@media screen and (min-width: 768px) {
+  .diplome .diplome-content .diplome-title {
+    font-size: 1.8rem;
+  }
+}
+.diplome .diplome-content .diplome-subtitle {
+  font-weight: bold;
+}
+.diplome .diplome-content .diplome-date {
+  font-style: italic;
+}
+
 .btn {
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
   border: solid 1px;

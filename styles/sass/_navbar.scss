@@ -4,6 +4,7 @@
   left: 0;
   background-color: $dark;
   padding: 10px;
+
   .navbar {
     @include justify-between;
     padding-top: 10px;
