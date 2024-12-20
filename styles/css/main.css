@@ -254,6 +254,64 @@ picture.emoji-gif img {
   font-style: italic;
 }
 
+@media screen and (min-width: 1024px) {
+  .experiences {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.experience {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .experience {
+    max-width: 33.33%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+}
+.experience .experience-header {
+  position: relative;
+  padding: 50px;
+  background-color: #55198b;
+  padding-top: 25px;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #ffffff;
+  border-bottom: none;
+}
+.experience .experience-header .experience-title {
+  text-align: center;
+}
+.experience .experience-header .experience-logo {
+  position: absolute;
+  border-radius: 50%;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100px;
+  max-height: 100px;
+}
+.experience .experience-content {
+  border: 1px solid #ffffff;
+  border-top: none;
+  min-height: 400px;
+  padding: 15px;
+  padding-top: 65px;
+  border-radius: 0 0 8px 8px;
+}
+.experience .experience-content .experience-subtitle {
+  font-weight: bold;
+  text-align: center;
+}
+.experience .experience-content .experience-date {
+  font-style: italic;
+  text-align: center;
+}
+.experience .experience-content .experience-description {
+  margin-top: 10px;
+}
+
 .btn {
   padding: 10px 20px;
   border-radius: 8px;
